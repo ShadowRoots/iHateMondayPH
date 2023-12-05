@@ -13,8 +13,8 @@
             <i class="fa-brands fa-instagram"></i>
         </div>
         <div class="other-links">
-            <button id="btn-login"><a href="login.html">Login</a></button>
-            <button id="btn-signup"><a href="signup.html">Sign up</a></button>
+            <button id="btn-login"><a href="/login">Login</a></button>
+            <button id="btn-signup"><a href="/signup">Sign up</a></button>
 
             <i class="fa-solid fa-user"></i>
             <i class="fa-solid fa-cart-shopping"></i>
@@ -26,17 +26,17 @@
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg" id="navbar">
             <div class="container-fluid">
-              <a class="nav-link" href="index.html"><img src="./image/logo.jpg" alt="" width="50px" style="border-radius: 50%;">&nbsp;iHateMondayPH</a>
+              <a class="nav-link" href="/"><img src="./image/logo.jpg" alt="" width="50px" style="border-radius: 50%;">&nbsp;iHateMondayPH</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="Shop.html">Shop</a>
+                    <a class="nav-link" href="/shop">Shop</a>
                   </li>
                   <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,10 +52,10 @@
                     </ul>
                   </li> -->
                   <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
+                    <a class="nav-link" href="/aboutus">About Us</a>
                   </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
+                    <a class="nav-link" href="/contact">Contact Us</a>
                   </li>
                 </ul>
                
@@ -79,7 +79,7 @@
                     <br> <span>Up to 50% OFF</span>
                 </h3>
                 <p>Discover unbeatable deals and unique treasures at our Thrift Shop!</p>
-                <a href="Shop.html">
+                <a href="/shop">
                     <button id="shopnow">SHOP NOW</button>
                 </a>
             </div>
@@ -128,7 +128,7 @@
         <div class="content">
             <h1>GET UP TO 50% OFF</h1>
             <p>We invite you to explore a world of affordable fashion, home goods, and hidden gems.</p>
-            <div id="bannerbtn"><a href="Shop.html"><button>SHOP NOW</button></a></div>
+            <div id="bannerbtn"><a href="/shop"><button>SHOP NOW</button></a></div>
         </div>
     </div>
     <!-- banner -->
@@ -277,7 +277,7 @@
                 </div>
             </div>
         </div>
-        <a href="Shop.html" id="viewmorebtn">VIEW MORE</a>
+        <a href="/shop" id="viewmorebtn">VIEW MORE</a>
     </div>
     <!-- product cards -->
 
@@ -339,9 +339,9 @@
             <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Useful Links</h4>
                 <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/aboutus">About</a></li>
+                  <li><a href="/contact">Contact</a></li>
                   <li><a href="#">Services</a></li>
                   <li><a href="#">Privacy policy</a></li>
                 </ul>
