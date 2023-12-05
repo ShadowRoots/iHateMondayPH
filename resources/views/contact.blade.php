@@ -13,11 +13,28 @@
             <i class="fa-brands fa-instagram"></i>
         </div>
         <div class="other-links">
-            <button id="btn-login"><a href="/login">Login</a></button>
-            <button id="btn-signup"><a href="/signup">Sign up</a></button>
-
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+          @php
+          $isLoggedIn = session()->get('isLoggedIn');
+          if($isLoggedIn){
+              $name = session()->get('name');
+              $id = session()->get('id');
+              echo $name;
+              $route = "/profile?id=".$id;
+              $route2 = "/cart?id=".$id;
+          }else{
+              echo "Please Sign Up or Register";
+              
+              $route = "/login";
+              $route2 = "/login";
+          }
+          
+@endphp
+      <?php if(!$isLoggedIn):?>
+          <button id="btn-login"><a href="/login">Login</a></button>
+          <button id="btn-signup"><a href="/signup">Sign up</a></button>
+      <?php endif; ?>
+      <a href="{{ $route }}"><i class="fa-solid fa-user"></i></a>
+      <a href="{{ $route2 }}"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </div>
     <!-- top navbar -->

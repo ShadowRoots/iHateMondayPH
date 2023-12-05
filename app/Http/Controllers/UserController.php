@@ -86,8 +86,12 @@ class UserController extends Controller
 						'email' => $newemail,
 						'password' => $request->new_password
 					]);
+					session()->put('isLoggedIn', true); 
+					session()->put('name', $newname); 
+					session()->put('email', $newemail);
+					session()->put('password', $request->new_password);
 					
-				return redirect()->route('user.profile', ['id' => $id]);
+				return redirect()->route('user.profile', ['id' => $id])->with('alert', 'Profile updated.');
 			}
 		}
 		

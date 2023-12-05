@@ -26,7 +26,7 @@ class HomeController extends Controller
     }
     public function logout(){
         session()->flush();
-        return redirect('login');
+        return redirect('login')->with('alert', 'You have been logged out.');
     }
 
     public function signup(){
