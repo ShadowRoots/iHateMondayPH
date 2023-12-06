@@ -205,7 +205,7 @@ if($isLoggedIn){
 				</a>
 			</li>
 			<li class="nav-item">
-				<a href="/logout"  class="nav-link text-dark" id="logout-link">
+				<a href="/logout" onclick="return confirm('Do you want to log out?')"  class="nav-link text-dark" id="logout-link">
 						<i class="fa fa-sign-out mr-3 text-primary fa-fw"></i>
 						Logout
 				</a>
