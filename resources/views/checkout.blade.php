@@ -23,6 +23,10 @@
 	$usertransactions = DB::table('transactions')->where('id', '=', $transact_id)->get();
 	
 	@endphp
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 .vertical-nav {
@@ -45,7 +49,7 @@
 	}
 	
 	.page-content {
-	width: calc(80% - 17rem);
+	width: calc(100% - 17rem);
 	margin-left: 17rem;
 	transition: all 0.4s;
 	}
@@ -132,6 +136,10 @@
 	
 	button{
 	width: 200px;
+	}
+	
+	#display{
+		width: 200px;
 	}
 	
 
@@ -223,13 +231,45 @@ if($isLoggedIn){
 			<div class="row">
 				<div class="col-md-4 border-right">
 					<div class="d-flex flex-column align-items-center text-center p-3 py-5">
-						@if($item == "girls heel")
-							<h3>Girls Heel</h3>
-							<img src='./image/p1.png' alt=''>
-						@elseif($item == "men hoodie")
-							<h3>Men Hoodie</h3>
-							<img src='./image/p2.png' alt=''>
+					
+						@if($item == "Adidas Pants")
+							<h3>Adidas Pants</h3>
+							<img src="./image/shopimg/IntegImgs/Adidas Pants.jpeg" alt="" id="display">
+						@elseif($item == "Kappa Pants")
+							<h3>Kappa Pants</h3>
+							<img src="./image/shopimg/IntegImgs/Kappa Track Pants.jpeg" alt="" id="display">
+						@elseif($item == "Nike Pants")
+							<h3>Nike Pants</h3>
+							<img src="./image/shopimg/IntegImgs/NIKE Track Pants.jpeg" alt="" id="display">
+						@elseif($item == "Uniqlo Parachute Pants")
+							<h3>Uniqlo Parachute Pants</h3>
+							<img src="./image/shopimg/IntegImgs/Uniqlo Parachute Pants.jpeg" alt="" id="display">
+						@elseif($item == "Y2K Nike Parachute Pants")
+							<h3>Y2K Nike Parachute Pants</h3>
+							<img src="./image/shopimg/IntegImgs/Y2K Nike Parachute Pants.jpeg" alt="" id="display">
+						@elseif($item == "Kaepa Longsleeves")
+							<h3>Uniqlo Parachute Pants</h3>
+							<img src="./image/shopimg/IntegImgs/Kaepa Longsleeve.jpeg" alt="" id="display">
+						@elseif($item == "Kenzo Hoodie")
+							<h3>Kenzo Hoodie</h3>
+							<img src="./image/shopimg/IntegImgs/Kenzo Hoodie.jpeg" alt="" id="display">
+						@elseif($item == "Vintage Fendi Windbreaker")
+							<h3>Vintage Fendi Windbreaker</h3>
+							<img src="./image/shopimg/IntegImgs/Vintage Fendi Windbreaker.jpeg" alt="" id="display">
+						@elseif($item == "NIKE Techfleecetwo tone Hoodie")
+							<h3>NIKE Techfleecetwo tone Hoodie</h3>
+							<img src="./image/shopimg/IntegImgs/NIKE Techfleece two tone Hoodie.jpeg" alt="" id="display">
+						@elseif($item == "Vintage ADIDAS Tee")
+							<h3>Vintage ADIDAS Tee</h3>
+							<img src="./image/shopimg/IntegImgs/Vintage ADIDAS Tee.jpeg" alt="" id="display">
+						@elseif($item == "Levi Jorts")
+							<h3>Levi Jorts</h3>
+							<img src="./image/shopimg/IntegImgs/Levi Jorts.jpeg" alt="" id="display">
+						@elseif($item == "Wrangler Cargo Jorts")
+							<h3>Wrangler Cargo Jorts</h3>
+							<img src="./image/shopimg/IntegImgs/Wrangler Cargo Jorts.jpeg" alt="" id="display">
 						@endif
+						
 					</div>
 				</div>
 				<div class="col-md-6 border-right">
@@ -251,13 +291,13 @@ if($isLoggedIn){
 							</select><br>
 							
 							<div class="form-group">
-								<input type="text" name="account" class="form-control" placeholder="Account Number" required>
+								<input type="text" name="account" id="account" class="form-control" placeholder="Account Number" required>
 							</div><br>
 							<div class="form-group">
-								<input type="text" name="contact" class="form-control" placeholder="Contact Number" required>
+								<input type="text" name="contact" id="contact" class="form-control" placeholder="Contact Number" required>
 							</div><br>
 							<div class="form-group">
-								<input type="text" name="address" class="form-control" placeholder="Address to Deliver" required>
+								<input type="text" name="address" id="address" class="form-control" placeholder="Address to Deliver" required>
 							</div><br>
 							<button type="submit" class="btn btn-primary profile-button">Check Out</button>
 							
@@ -283,10 +323,10 @@ if($isLoggedIn){
     });
 
 	document.getElementById ("nameProfile").innerHTML = "<?php echo $name?>";
-	document.getElementById ("userid").innerHTML = "<?php echo $id?>";
-	document.getElementById ("username").innerHTML = "<?php echo $name?>";
-	document.getElementById ("nameField").placeholder = "<?php echo $name?>";
-	document.getElementById ("email").placeholder = "<?php echo $email?>";
+	// document.getElementById ("userid").innerHTML = "<?php echo $id?>";
+	// document.getElementById ("username").innerHTML = "<?php echo $name?>";
+	// document.getElementById ("nameField").placeholder = "<?php echo $name?>";
+	// document.getElementById ("email").placeholder = "<?php echo $email?>";
 
 	$(function() {
     // Sidebar toggle behavior

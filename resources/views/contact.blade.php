@@ -10,7 +10,7 @@
         <div class="top-icons">
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instagram.com/ihatemondayph/" class="twiiter"><i class="fa-brands fa-instagram"></i></a>
         </div>
         <div class="other-links">
           @php
@@ -91,19 +91,19 @@
                 <div class="col-md-4 py-3 py-md-0">
                     <div class="card">
                         <i class="fas fa-phone"> Phone</i>
-                        <h6>+00000000000000000</h6>
+                        <h6>+ 01 234 567 88</h6>
                     </div>
                 </div>
                 <div class="col-md-4 py-3 py-md-0">
                     <div class="card">
                         <i class="fa-solid fa-envelope"> Email</i>
-                        <h6>example@gmail.com</h6>
+                        <h6>iHateMondayPH@gmail.com</h6>
                     </div>
                 </div>
                 <div class="col-md-4 py-3 py-md-0">
                     <div class="card">
                         <i class="fa-solid fa-location-dot"> Address</i>
-                        <h6>HAKDOG</h6>
+                        <h6>1568 Raxabago St. Tondo, Manila</h6>
                     </div>
                 </div>
             </div>
@@ -137,15 +137,17 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 footer-content">
-                <h3>Fashion</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, hic?</p>
+            <h3>iHateMondayPH</h3>
+                <p>Discover unbeatable deals and unique treasures at our Thrift Shop! Our advertisement invites you to explore a world of 
+                    affordable fashion, home goods, and hidden gems.<br><br>Visit us today for a shopping experience that combines affordability 
+                    with eco-consciousness, turning secondhand finds into first-class style.</p>
                 <p>
-                    Karcahi <br>
-                    Sindh <br>
-                    Asd <br>
+                    Tondo, Manila <br>
+                    Dubai <br>
+                    Santa Cruz, Manila <br>
                 </p>
-                <strong><i class="fas fa-phone"></i> Phone: <strong>+000000000000000</strong></strong><br>
-                <strong><i class="fa-solid fa-envelope"></i> Email: <strong>example@gmail.com</strong></strong>
+                <strong><i class="fas fa-phone"></i> Phone: <strong>+ 01 234 567 88</strong></strong><br>
+                <strong><i class="fa-solid fa-envelope"></i> Email: <strong>iHateMondayPH@gmail.com</strong></strong>
             </div>
             <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Useful Links</h4>
@@ -153,27 +155,26 @@
                   <li><a href="/">Home</a></li>
                   <li><a href="/aboutus">About</a></li>
                   <li><a href="/contact">Contact</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Privacy policy</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Our Services</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, rem!</p>
+                <p>We offer services for our loyal customers!</p>
                 <ul>
-                    <li><a href="#">Smart phone</a></li>
-                    <li><a href="#">Smart watch</a></li>
-                    <li><a href="#">Airpods</a></li>
+                    <li>Fast Delivery</li>
+                    <li>Item-Pick up</li>
+                    <li>Protective Packaging</li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Our Social Network</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ad?</p>
+                <p>As of now, We only have our instagram page. Click the instagram icon & support us as we expand our shop
+                    and wait for more rare items!</p>
                 <div class="socail-links mt-3">
                     <a href="#" class="twiiter"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#" class="twiiter"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#" class="twiiter"><i class="fa-brands fa-google-plus"></i></a>
-                    <a href="#" class="twiiter"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/ihatemondayph/" class="twiiter"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#" class="twiiter"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>

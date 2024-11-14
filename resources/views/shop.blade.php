@@ -110,10 +110,10 @@
         <div class="row" style="margin-top: 30px;">
             <div class="col-md-3 py-3 py-md-0">
                 <div class="card">
-                    <img src="./image/p1.png" alt="">
+                    <img src="./image/shopimg/IntegImgs/Adidas Pants.jpeg" alt="">
                     <div class="card-body">
-                        <h3>Girls Heel</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>Adidas Pants</h3>
+                        <p>Size: L <br> Dimensions: 33x38.5<br>Condition: 7/10<br>No issue</p>
                         <div class="star">
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
@@ -123,10 +123,10 @@
                         </div>
 						<form method="post" action="{{ route('addtocart') }}">
 						@csrf
-                        <h5>₱12.3 <strike>₱15.5</strike>
+                        <h5>₱400 <strike>₱500</strike>
                         <button type="submit" class="float-right btn btn-link"><span><i class="fa-solid fa-cart-shopping"></i></span></button></a></h5>
-						<input type="hidden" name="product_name" value="girls heel">
-						<input type="hidden" name="product_amount" value=12.3>
+						<input type="hidden" name="product_name" value="Adidas Pants">
+						<input type="hidden" name="product_amount" value=400>
 						@php
 						
 						try {
@@ -142,10 +142,10 @@
             </div>
             <div class="col-md-3 py-3 py-md-0">
                 <div class="card">
-                    <img src="./image/p2.png" alt="">
+                    <img src="./image/shopimg/IntegImgs/Kappa Track Pants.jpeg" alt="">
                     <div class="card-body">
-                        <h3>Men Hoodie</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>Kappa Pants</h3>
+                        <p>Size: M <br> Dimensions: 26x42<br>Condition: 9/10<br>No issue</p>
                         <div class="star">
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
@@ -155,10 +155,10 @@
                         </div>
 						<form method="post" action="{{ route('addtocart') }}">
 						@csrf
-                        <h5>₱3.2 <strike>₱5.1</strike>
+                        <h5>₱1,200 <strike>₱1,500</strike>
                         <button type="submit" class="float-right btn btn-link"><span><i class="fa-solid fa-cart-shopping"></i></span></button></a></h5>
-						<input type="hidden" name="product_name" value="men hoodie">
-						<input type="hidden" name="product_amount" value=3.2>
+						<input type="hidden" name="product_name" value="Kappa Track Pants">
+						<input type="hidden" name="product_amount" value=1200>
 						@php
 						
 						try {
@@ -174,10 +174,10 @@
             </div>
             <div class="col-md-3 py-3 py-md-0">
                 <div class="card">
-                    <img src="./image/p3.png" alt="">
+                    <img src="./image/shopimg/IntegImgs/NIKE Track Pants.jpeg" alt="">
                     <div class="card-body">
-                        <h3>Smart Watch</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>NIKE Pants</h3>
+                        <p>Size: M <br> Dimensions: 24x38<br>Condition: 9/10<br>No issue</p>
                         <div class="star">
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
@@ -185,16 +185,31 @@
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
                         </div>
-                        <h5>₱50.10 <strike>₱60</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                        <form method="post" action="{{ route('addtocart') }}">
+						@csrf
+                        <h5>₱800 <strike>₱1,000</strike>
+                        <button type="submit" class="float-right btn btn-link"><span><i class="fa-solid fa-cart-shopping"></i></span></button></a></h5>
+						<input type="hidden" name="product_name" value="NIKE Track Pants">
+						<input type="hidden" name="product_amount" value=800>
+						@php
+						
+						try {
+							echo "<input type='hidden' name='user_id' value='$id'>";
+						} catch (Exception $e){
+							echo "<input type='hidden' name='user_id' value=0>";
+						}
+						
+						@endphp
+						</form>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 py-3 py-md-0">
                 <div class="card">
-                    <img src="./image/p4.png" alt="">
+                    <img src="./image/shopimg/IntegImgs/Uniqlo Parachute Pants.jpeg" alt="">
                     <div class="card-body">
-                        <h3>Men T-Shirt</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>Uniqlo Pants</h3>
+                        <p>Size: L <br> Dimensions: 32x40.5<br>Condition: 8/10<br>Small stain near pocket</p>
                         <div class="star">
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
@@ -202,7 +217,22 @@
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
                         </div>
-                        <h5>₱10.5 <strike>₱15</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                        <form method="post" action="{{ route('addtocart') }}">
+						@csrf
+                        <h5>₱800 <strike>₱1,000</strike>
+                        <button type="submit" class="float-right btn btn-link"><span><i class="fa-solid fa-cart-shopping"></i></span></button></a></h5>
+						<input type="hidden" name="product_name" value="Uniqlo Parachute Pants">
+						<input type="hidden" name="product_amount" value=800>
+						@php
+						
+						try {
+							echo "<input type='hidden' name='user_id' value='$id'>";
+						} catch (Exception $e){
+							echo "<input type='hidden' name='user_id' value=0>";
+						}
+						
+						@endphp
+						</form>
                     </div>
                 </div>
             </div>
@@ -211,10 +241,10 @@
         <div class="row" style="margin-top: 30px;">
             <div class="col-md-3 py-3 py-md-0">
                 <div class="card">
-                    <img src="./image/p5.png" alt="">
+                    <img src="./image/shopimg/IntegImgs/Y2K Nike Parachute Pants.jpeg" alt="">
                     <div class="card-body">
-                        <h3>Hand Bag</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>Y2K Nike Pants</h3>
+                        <p>Size: M <br> Dimensions: 34x40<br>Condition: 6/10<br>Need wash</p>
                         <div class="star">
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
@@ -222,16 +252,31 @@
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
                         </div>
-                        <h5>₱100.5 <strike>₱120.30</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                        <form method="post" action="{{ route('addtocart') }}">
+						@csrf
+                        <h5>₱900 <strike>₱1,300</strike>
+                        <button type="submit" class="float-right btn btn-link"><span><i class="fa-solid fa-cart-shopping"></i></span></button></a></h5>
+						<input type="hidden" name="product_name" value="Y2K Nike Parachute Pants">
+						<input type="hidden" name="product_amount" value=900>
+						@php
+						
+						try {
+							echo "<input type='hidden' name='user_id' value='$id'>";
+						} catch (Exception $e){
+							echo "<input type='hidden' name='user_id' value=0>";
+						}
+						
+						@endphp
+						</form>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 py-3 py-md-0">
                 <div class="card">
-                    <img src="./image/p6.png" alt="">
+                    <img src="./image/shopimg/IntegImgs/Kaepa Longsleeve.jpeg" alt="">
                     <div class="card-body">
-                        <h3>Sport Shoes</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>Kaepa Longsleeve</h3>
+                        <p>Size: L-XL <br> Dimensions: 23.5x28<br>Condition: 9/10<br>No issue</p>
                         <div class="star">
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
@@ -239,17 +284,32 @@
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
                         </div>
-                        <h5>₱32.50 <strike>₱35.30</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                        <form method="post" action="{{ route('addtocart') }}">
+						@csrf
+                        <h5>₱500 <strike>₱700</strike>
+                        <button type="submit" class="float-right btn btn-link"><span><i class="fa-solid fa-cart-shopping"></i></span></button></a></h5>
+						<input type="hidden" name="product_name" value="Kaepa Longsleeve">
+						<input type="hidden" name="product_amount" value=500>
+						@php
+						
+						try {
+							echo "<input type='hidden' name='user_id' value='$id'>";
+						} catch (Exception $e){
+							echo "<input type='hidden' name='user_id' value=0>";
+						}
+						
+						@endphp
+						</form>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-3 py-3 py-md-0">
                 <div class="card">
-                    <img src="./image/p7.png" alt="">
+                    <img src="./image/shopimg/IntegImgs/Kenzo Hoodie.jpeg" alt="">
                     <div class="card-body">
-                        <h3>Girls Heel</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>Kenzo Hoodie</h3>
+                        <p>Size: S(on tag) <br> Dimensions: 21x29<br>Condition: 10/10<br>Good as new</p>
                         <div class="star">
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
@@ -257,16 +317,31 @@
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
                         </div>
-                        <h5>₱20.10 <strike>₱30.20</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                        <form method="post" action="{{ route('addtocart') }}">
+						@csrf
+                        <h5>₱1,200 <strike>₱1,400</strike>
+                        <button type="submit" class="float-right btn btn-link"><span><i class="fa-solid fa-cart-shopping"></i></span></button></a></h5>
+						<input type="hidden" name="product_name" value="Kenzo Hoodie">
+						<input type="hidden" name="product_amount" value=1200>
+						@php
+						
+						try {
+							echo "<input type='hidden' name='user_id' value='$id'>";
+						} catch (Exception $e){
+							echo "<input type='hidden' name='user_id' value=0>";
+						}
+						
+						@endphp
+						</form>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 py-3 py-md-0">
                 <div class="card">
-                    <img src="./image/p8.png" alt="">
+                    <img src="./image/shopimg/IntegImgs/Vintage Fendi Windbreaker.jpeg" alt="">
                     <div class="card-body">
-                        <h3>Means Jeans</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>Vintage Fendi</h3>
+                        <p>Size: XL-XXL <br> Dimensions: 26x30<br>Condition: 9/10<br>No issue</p>
                         <div class="star">
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
@@ -274,7 +349,22 @@
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
                         </div>
-                        <h5>₱65.50 <strike>₱100</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                        <form method="post" action="{{ route('addtocart') }}">
+						@csrf
+                        <h5>₱3,000 <strike>₱5,000</strike>
+                        <button type="submit" class="float-right btn btn-link"><span><i class="fa-solid fa-cart-shopping"></i></span></button></a></h5>
+						<input type="hidden" name="product_name" value="Vintage Fendi Windbreaker">
+						<input type="hidden" name="product_amount" value=3000>
+						@php
+						
+						try {
+							echo "<input type='hidden' name='user_id' value='$id'>";
+						} catch (Exception $e){
+							echo "<input type='hidden' name='user_id' value=0>";
+						}
+						
+						@endphp
+						</form>
                     </div>
                 </div>
             </div>
@@ -282,10 +372,10 @@
         <div class="row" style="margin-top: 30px;">
             <div class="col-md-3 py-3 py-md-0">
                 <div class="card">
-                    <img src="./image/p9.jpg" alt="">
+                    <img src="./image/shopimg/IntegImgs/NIKE Techfleece two tone Hoodie.jpeg" alt="">
                     <div class="card-body">
-                        <h3>Dark Pant</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>NIKE Techfleece</h3>
+                        <p>Size: XXL <br> Dimensions: 26.5x29<br>Condition: 10/10<br>Bought in dubai. Not thrifted</p>
                         <div class="star">
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
@@ -293,16 +383,31 @@
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
                         </div>
-                        <h5>₱13.5 <strike>₱15.10</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                        <form method="post" action="{{ route('addtocart') }}">
+						@csrf
+                        <h5>₱4,000 <strike>₱8,000</strike>
+                        <button type="submit" class="float-right btn btn-link"><span><i class="fa-solid fa-cart-shopping"></i></span></button></a></h5>
+						<input type="hidden" name="product_name" value="NIKE Techfleece two tone Hoodie">
+						<input type="hidden" name="product_amount" value=4000>
+						@php
+						
+						try {
+							echo "<input type='hidden' name='user_id' value='$id'>";
+						} catch (Exception $e){
+							echo "<input type='hidden' name='user_id' value=0>";
+						}
+						
+						@endphp
+						</form>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 py-3 py-md-0">
                 <div class="card">
-                    <img src="./image/p10.jpg" alt="">
+                    <img src="./image/shopimg/IntegImgs/Vintage ADIDAS Tee.jpeg" alt="">
                     <div class="card-body">
-                        <h3>Mwalk Billies</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>Vintage Tee</h3>
+                        <p>Size: L <br> Dimensions: 22x29<br>Condition: 8/10<br>Crack Print</p>
                         <div class="star">
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
@@ -310,16 +415,31 @@
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
                         </div>
-                        <h5>₱6.50 <strike>₱10.50</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                        <form method="post" action="{{ route('addtocart') }}">
+						@csrf
+                        <h5>₱500 <strike>₱800</strike>
+                        <button type="submit" class="float-right btn btn-link"><span><i class="fa-solid fa-cart-shopping"></i></span></button></a></h5>
+						<input type="hidden" name="product_name" value="Vintage ADIDAS Tee">
+						<input type="hidden" name="product_amount" value=500>
+						@php
+						
+						try {
+							echo "<input type='hidden' name='user_id' value='$id'>";
+						} catch (Exception $e){
+							echo "<input type='hidden' name='user_id' value=0>";
+						}
+						
+						@endphp
+						</form>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 py-3 py-md-0">
                 <div class="card">
-                    <img src="./image/p11.jpg" alt="">
+                    <img src="./image/shopimg/IntegImgs/Levi Jorts.jpeg" alt="">
                     <div class="card-body">
-                        <h3>Sweet Shirt</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>Levi Jorts</h3>
+                        <p>Size: 36 on tag <br> Dimensions: 36x20.5<br>Condition: 7/10<br>washable stains</p>
                         <div class="star">
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
@@ -327,16 +447,31 @@
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
                         </div>
-                        <h5>₱10.5 <strike>₱15.50</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                        <form method="post" action="{{ route('addtocart') }}">
+						@csrf
+                        <h5>₱450 <strike>₱560</strike>
+                        <button type="submit" class="float-right btn btn-link"><span><i class="fa-solid fa-cart-shopping"></i></span></button></a></h5>
+						<input type="hidden" name="product_name" value="Levi Jorts">
+						<input type="hidden" name="product_amount" value=450>
+						@php
+						
+						try {
+							echo "<input type='hidden' name='user_id' value='$id'>";
+						} catch (Exception $e){
+							echo "<input type='hidden' name='user_id' value=0>";
+						}
+						
+						@endphp
+						</form>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 py-3 py-md-0">
                 <div class="card">
-                    <img src="./image/p12.jpg" alt="">
+                    <img src="./image/shopimg/IntegImgs/Wrangler Cargo Jorts.jpeg" alt="">
                     <div class="card-body">
-                        <h3>Black T-Shirt</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3>Cargo Jorts</h3>
+                        <p>Size: 38<br> Dimensions: 38x20.5<br>Condition: 9/10<br>No issue</p>
                         <div class="star">
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
@@ -344,7 +479,22 @@
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
                         </div>
-                        <h5>₱5.1 <strike>₱6.50</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                        <form method="post" action="{{ route('addtocart') }}">
+						@csrf
+                        <h5>₱500 <strike>₱660</strike>
+                        <button type="submit" class="float-right btn btn-link"><span><i class="fa-solid fa-cart-shopping"></i></span></button></a></h5>
+						<input type="hidden" name="product_name" value="Wrangler Cargo Jorts">
+						<input type="hidden" name="product_amount" value=450>
+						@php
+						
+						try {
+							echo "<input type='hidden' name='user_id' value='$id'>";
+						} catch (Exception $e){
+							echo "<input type='hidden' name='user_id' value=0>";
+						}
+						
+						@endphp
+						</form>
                     </div>
                 </div>
             </div>
@@ -372,9 +522,16 @@
     <div class="container" style="margin-top: 100px;">
     <hr>
 </div>
-<div class="container">
+<div class="container" id="product">
     <h3 style="font-weight: bold;">PRODUCT.</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vero eius ipsam incidunt illum totam nostrum quidem sit cumque fugit. Accusamus rem praesentium labore tempore ullam porro quaerat fugiat cum ipsum, sint perferendis voluptate ad, quod reiciendis officia! In voluptate quae expedita sunt eum placeat alias soluta. Rem commodi, impedit error doloribus ratione at provident beatae, aut doloremque sunt possimus voluptas recusandae nam aliquid eos quia minus harum repellat quae eveniet laborum dolore esse voluptate sed. Voluptate ullam dolor sapiente neque labore hic nam odio qui consectetur porro minima nesciunt suscipit vitae obcaecati reiciendis itaque ipsum unde, debitis nemo soluta!</p>
+    <p>Thrift clothing products, epitomizing the essence of sustainable fashion, offer a distinctive and eco-friendly 
+        alternative to mainstream retail. These pre-loved garments, curated from various eras and styles, not only 
+        showcase individuality but also contribute to a circular economy by reducing textile waste. Thrift shopping 
+        for clothing is a treasure hunt, where vintage gems coexist with contemporary finds at affordable prices. 
+        Choosing thrifted apparel allows individuals to embrace a unique sense of style while minimizing their 
+        environmental footprint. Beyond the joy of discovering hidden fashion gems, opting for thrift clothing 
+        is a conscious step towards a more sustainable and ethical approach to personal style, proving that great 
+        fashion can be both affordable and environmentally responsible.</p>
 
     <hr>
 </div>
@@ -415,14 +572,16 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 footer-content">
                 <h3>iHateMondayPH</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, hic?</p>
+                <p>Discover unbeatable deals and unique treasures at our Thrift Shop! Our advertisement invites you to explore a world of 
+                    affordable fashion, home goods, and hidden gems.<br><br>Visit us today for a shopping experience that combines affordability 
+                    with eco-consciousness, turning secondhand finds into first-class style.</p>
                 <p>
-                    Karcahi <br>
-                    Sindh <br>
-                    Pakistan <br>
+                    Tondo, Manila <br>
+                    Dubai <br>
+                    Santa Cruz, Manila <br>
                 </p>
-                <strong><i class="fas fa-phone"></i> Phone: <strong>+000000000000000</strong></strong><br>
-                <strong><i class="fa-solid fa-envelope"></i> Email: <strong>example@gmail.com</strong></strong>
+                <strong><i class="fas fa-phone"></i> Phone: <strong>+ 01 234 567 88</strong></strong><br>
+                <strong><i class="fa-solid fa-envelope"></i> Email: <strong>iHateMondayPH@gmail.com</strong></strong>
             </div>
             <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Useful Links</h4>
@@ -430,27 +589,26 @@
                   <li><a href="/">Home</a></li>
                   <li><a href="/aboutus">About</a></li>
                   <li><a href="/contact">Contact</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Privacy policy</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Our Services</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, rem!</p>
+                <p>We offer services for our loyal customers!</p>
                 <ul>
-                    <li><a href="#">Smart phone</a></li>
-                    <li><a href="#">Smart watch</a></li>
-                    <li><a href="#">Airpods</a></li>
+                    <li>Fast Delivery</li>
+                    <li>Item-Pick up</li>
+                    <li>Protective Packaging</li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Our Social Network</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ad?</p>
+                <p>As of now, We only have our instagram page. Click the instagram icon & support us as we expand our shop
+                    and wait for more rare items!</p>
                 <div class="socail-links mt-3">
                     <a href="#" class="twiiter"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#" class="twiiter"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#" class="twiiter"><i class="fa-brands fa-google-plus"></i></a>
-                    <a href="#" class="twiiter"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/ihatemondayph/" class="twiiter"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#" class="twiiter"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>

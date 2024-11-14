@@ -40,3 +40,5 @@ Route::post('/edit', [UserController::class, 'editprofile'])->name('edit');
 Route::post('/checkout', [TransactionController::class, 'checkoutform'])->name('checkout');
 
 Route::post('/checkoutitem', [TransactionController::class, 'checkout'])->name('item.checkout');
+
+Route::post('/delete', [TransactionController::class, 'destroy'])->name('transact.delete');

@@ -48,7 +48,7 @@
 	}
 	
 	.page-content {
-	width: calc(80% - 17rem);
+	width: calc(100% - 17rem);
 	margin-left: 17rem;
 	transition: all 0.4s;
 	}
@@ -167,7 +167,7 @@ if($isLoggedIn){
 }
 
 @endphp
-			<a href="{{ route('shop', ['id' => $id]) }}" class="btn btn-dark">Shop</a>
+			{{-- <a href="{{ route('shop', ['id' => $id]) }}" class="btn btn-dark">Shop</a> --}}
 <?php if(!$isLoggedIn):?>
 <button id="btn-login"><a href="/login">Login</a></button>
 <button id="btn-signup"><a href="/signup">Sign up</a></button>
@@ -244,7 +244,7 @@ if($isLoggedIn){
 								<td>{{ $transactions->product_name }}</td>
 								<td>{{ $transactions->product_amount }}</td>
 								
-								@php
+								<?php
 									
 									$forcheckout = false;
 									
@@ -258,12 +258,18 @@ if($isLoggedIn){
 										
 									}
 									
-									if(!$forcheckout){
-										echo "<td><button type='submit' class='btn btn-primary profile-button'>Check Out</button></td>";
-									} else {
-										echo "<td><i>On Process</i></td>";
-									}
-								@endphp
+									if(!$forcheckout): ?>
+										<td><button type='submit' class='btn btn-primary profile-button'>Check Out</button>
+									</form>
+									<form method="POST" action="{{ route('transact.delete', ['id' => $id]) }}" style="display: inline;">
+									@csrf
+										<input type="hidden" name="id" value="{{ $id }}">
+										<input type="hidden" name="transactid" value="{{ $transactions->id }}">
+										<br><button type="submit" onclick="return confirm('Remove item from cart?')" class="btn btn-danger mt-2">Delete</button></td>
+									</form>
+								<?php else: ?>
+									<td><i>On Process</i></td>
+								<?php endif; ?>
 								
 							</form>
 						</tr>
@@ -290,10 +296,10 @@ if($isLoggedIn){
     });
 
 	document.getElementById ("nameProfile").innerHTML = "<?php echo $name?>";
-	document.getElementById ("userid").innerHTML = "<?php echo $id?>";
-	document.getElementById ("username").innerHTML = "<?php echo $name?>";
-	document.getElementById ("nameField").placeholder = "<?php echo $name?>";
-	document.getElementById ("email").placeholder = "<?php echo $email?>";
+	// document.getElementById ("userid").innerHTML = "<?php echo $id?>";
+	// document.getElementById ("username").innerHTML = "<?php echo $name?>";
+	// document.getElementById ("nameField").placeholder = "<?php echo $name?>";
+	// document.getElementById ("email").placeholder = "<?php echo $email?>";
 
 	$(function() {
     // Sidebar toggle behavior

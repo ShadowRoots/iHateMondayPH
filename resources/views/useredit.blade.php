@@ -39,7 +39,7 @@
 	}
 	
 	.page-content {
-	width: calc(80% - 17rem);
+	width: calc(100% - 17rem);
 	margin-left: 17rem;
 	transition: all 0.4s;
 	}

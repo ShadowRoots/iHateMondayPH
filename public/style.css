@@ -450,6 +450,9 @@
 /* banner2 */
 
 /* product cards */
+#product{
+    text-align: justify;
+}
 #product-cards {
     margin-top: 50px;
 }
@@ -741,6 +744,7 @@ html {
 /* about */
 #about {
     margin-top: 50px;
+    text-align: justify;
 }
 
 #about h1 {

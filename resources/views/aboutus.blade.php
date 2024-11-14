@@ -10,7 +10,7 @@
         <div class="top-icons">
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instagram.com/ihatemondayph/" class="twiiter"><i class="fa-brands fa-instagram"></i></a>
         </div>
         <div class="other-links">
           @php
@@ -92,11 +92,27 @@
     <div class="row" style="margin-top: 50px;">
         <div class="col-md-6 py-3 py-md-0">
             <div class="card">
-                <img src="./image/about.png" alt="">
+                <img src="./image/abouts.png" alt="">
             </div>
         </div>
         <div class="col-md-6 py-3 py-md-0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vitae numquam aspernatur repellendus autem sint beatae, facilis quas deserunt iure natus minus ab deleniti eveniet neque quasi ullam id in alias consectetur quia nesciunt. Exercitationem vitae atque commodi architecto tenetur! Fugit necessitatibus nesciunt, eligendi tempora reprehenderit suscipit doloribus animi mollitia maiores? Numquam, est laborum dicta aperiam nobis deserunt libero non dolorem cum dolorum distinctio commodi iure, tenetur animi? Nam similique culpa consequuntur itaque quasi ipsa placeat ea perferendis est quo, ut eaque quis dolorem, aliquam iste reprehenderit provident neque magnam voluptatibus. Eaque provident omnis reiciendis ducimus, magni qui voluptatem quibusdam.</p>
+            <p>Founded on the belief that every item deserves a second chance, iHateMondayPH emerged from a vision to create 
+            a space where people can explore, connect, and discover unique pieces with a rich history. Our journey began with 
+            a commitment to reducing waste, promoting eco-friendly choices, and building a community that values the beauty of 
+            pre-loved items.</p><br>
+
+            <h2>VISION</h2><br>
+            <p>To cultivate a sustainable and vibrant community where the joy of discovery meets responsible consumerism, 
+            our vision at iHateMondayPH is to be the go-to destination for individuals seeking affordable, unique, 
+            and environmentally conscious shopping experiences. We envision a world where every item has a second chance, 
+            and our Thrift Shop becomes a symbol of sustainable living and community connection.</p>
+
+            <h2>MISSION</h2><br>
+            <p>Our Thrift Shop offers affordable fashion and home goods, promoting sustainability and reducing waste. 
+            We create a welcoming space for community engagement, fostering connections and sharing stories. We support 
+            local charities and social initiatives, using proceeds to make a positive impact. We celebrate diversity by 
+            offering a wide range of products catering to different preferences, ensuring everyone feels 
+            included and valued.</p>
         </div>
     </div>
 </div>
@@ -136,15 +152,17 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 footer-content">
-                <h3>Fashion</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, hic?</p>
+            <h3>iHateMondayPH</h3>
+                <p>Discover unbeatable deals and unique treasures at our Thrift Shop! Our advertisement invites you to explore a world of 
+                    affordable fashion, home goods, and hidden gems.<br><br>Visit us today for a shopping experience that combines affordability 
+                    with eco-consciousness, turning secondhand finds into first-class style.</p>
                 <p>
-                    Karcahi <br>
-                    Sindh <br>
-                    Asd <br>
+                    Tondo, Manila <br>
+                    Dubai <br>
+                    Santa Cruz, Manila <br>
                 </p>
-                <strong><i class="fas fa-phone"></i> Phone: <strong>+000000000000000</strong></strong><br>
-                <strong><i class="fa-solid fa-envelope"></i> Email: <strong>example@gmail.com</strong></strong>
+                <strong><i class="fas fa-phone"></i> Phone: <strong>+ 01 234 567 88</strong></strong><br>
+                <strong><i class="fa-solid fa-envelope"></i> Email: <strong>iHateMondayPH@gmail.com</strong></strong>
             </div>
             <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Useful Links</h4>
@@ -152,27 +170,26 @@
                   <li><a href="/">Home</a></li>
                   <li><a href="/aboutus">About</a></li>
                   <li><a href="/contact">Contact</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Privacy policy</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Our Services</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, rem!</p>
+                <p>We offer services for our loyal customers!</p>
                 <ul>
-                    <li><a href="#">Smart phone</a></li>
-                    <li><a href="#">Smart watch</a></li>
-                    <li><a href="#">Airpods</a></li>
+                    <li>Fast Delivery</li>
+                    <li>Item-Pick up</li>
+                    <li>Protective Packaging</li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Our Social Network</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ad?</p>
+                <p>As of now, We only have our instagram page. Click the instagram icon & support us as we expand our shop
+                    and wait for more rare items!</p>
                 <div class="socail-links mt-3">
                     <a href="#" class="twiiter"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#" class="twiiter"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#" class="twiiter"><i class="fa-brands fa-google-plus"></i></a>
-                    <a href="#" class="twiiter"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/ihatemondayph/" class="twiiter"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#" class="twiiter"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>

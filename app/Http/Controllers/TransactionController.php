@@ -55,4 +55,13 @@ class TransactionController extends Controller
 		return redirect()->route('user.profile', ['id' => $user_id])->with('alert', "Items: ".$item.", Mode Of Payment: ".$mode.", Account: ".$account.", Amount".$amount);
 		
 	}
+	
+	public function destroy(Request $request){
+		$transact_id = $request->input('transactid');
+		$user_id = $request->input('id');
+		
+		DB::table('transactions')->where('id', '=', $transact_id)->delete();
+		
+		return redirect()->route('user.cart', ['id' => $user_id])->with('alert', 'Item have been deleted.');
+	}
 }
